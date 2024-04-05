@@ -1,0 +1,28 @@
+.auto {
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 550px;
+     flex-direction: column;
+ }
+
+.form-group {
+    width: 450px;
+}
+
+.ttt {
+    margin-top: 20px;
+    margin-bottom: 110px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+h5{
+    margin-top: -150px;
+}
