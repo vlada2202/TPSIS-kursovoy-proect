@@ -1,0 +1,21 @@
+.add {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    flex-direction: column;
+}
+
+.form-group {
+    width: 450px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+}
