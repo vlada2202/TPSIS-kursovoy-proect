@@ -1,0 +1,73 @@
+body{
+    background: #9C9A95;
+}
+.coll{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+header{
+    background-color: #61605E;
+}
+header h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 0;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.poisk{
+    margin-top: 7px;
+    position: absolute;
+    right:75px;
+    color: #000000;
+
+}
+.asa{
+    margin-top: 7px;
+    position: absolute;
+    right:15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #61605E;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+a.product-link {
+    color: black;
+}
+.card-text{
+    text-align: justify;
+    text-indent: 20px;
+}
+.zz{
+    margin-right: 7px;
+    margin-top:5px;
+}
+.ii{
+    margin-right: 7px;
+    margin-top:5px;
+}
+.dd{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.xxx{
+    margin-left: 0px;
+}
+.nav-link {
+    color: white;
+}
+.ada a {
+    color: white;
+}
