@@ -1,0 +1,42 @@
+.regist {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    flex-direction: column;
+}
+
+.form-group {
+    width: 450px;
+}
+
+.ss {
+    margin-top: 20px;
+    margin-bottom: 110px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn-register {
+    margin-top: 20px;
+}
+.btn-submit{
+    margin-top: 20px;
+}
+.ss{
+    margin-bottom: 40px;
+}
