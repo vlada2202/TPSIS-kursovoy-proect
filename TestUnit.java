@@ -12,8 +12,6 @@ public class DilerApplicationTest {
     }
 }
 
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class CarShopTest {
 
@@ -29,9 +27,6 @@ public class CarShopTest {
         assertTrue(result);
     }
 }
-
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class DiscountActionTest {
 
@@ -64,9 +59,6 @@ public class DiscountActionTest {
     }
 }
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-
 public class DiscountFinderTest {
 
     @Test
@@ -81,15 +73,13 @@ public class DiscountFinderTest {
         int maxPrice = 30000;
         boolean isNew = true;
 
-        DiscountAction discountAction = discountFinder.findDiscount(searchQuery, carModel, carMakeYear, carColor, minPrice, maxPrice, isNew);
+        DiscountAction discountAction = discountFind-er.findDiscount(searchQuery, carModel, carMakeYear, carColor, minPrice, max-Price, isNew);
 
         assertNotNull(discountAction);
         assertTrue(discountAction.isActive());
         assertTrue(discountAction.getDiscountPercentage() > 0);
     }
 }
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class AvtosalonManagerTest {
 
@@ -119,8 +109,7 @@ public class AvtosalonManagerTest {
         assertEquals(isOpen, avtosalon.isOpen());
     }
 }
-import org.junit.Test;
-import static org.junit.Assert.*;
+
 
 public class UserManagerTest {
 
@@ -144,8 +133,6 @@ public class UserManagerTest {
         assertNull(userManager.getUser(userId));
     }
 }
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class AvtosalonManagerTest {
 
@@ -167,7 +154,7 @@ public class AvtosalonManagerTest {
         double newDiscount = 0.15;
         avtosalonManager.editDiscount(avtosalonId, newDiscount);
 
-        Avtosalon updatedAvtosalon = avtosalonManager.getAvtosalon(avtosalonId);
+        Avtosalon updatedAvtosalon = avtosalonManag-er.getAvtosalon(avtosalonId);
 
         assertNotNull(updatedAvtosalon);
         assertEquals(newDiscount, updatedAvtosalon.getDiscount(), 0.001);
@@ -178,9 +165,6 @@ public class AvtosalonManagerTest {
         assertEquals(website, updatedAvtosalon.getWebsite());
     }
 }
-
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class AnalyticsManagerTest {
 
@@ -221,16 +205,14 @@ public class AnalyticsManagerTest {
         carAnalyticsManager.addCarAnalyticsData(startDate, endDate, metric3, 25000);
 
         double carCount = carAnalyticsManager.getCarAnalyticsData(startDate, endDate, metric1);
-        double salesVolume = carAnalyticsManager.getCarAnalyticsData(startDate, endDate, metric2);
-        double averagePrice = carAnalyticsManager.getCarAnalyticsData(startDate, endDate, metric3);
+        double salesVolume = carAnalyticsManag-er.getCarAnalyticsData(startDate, endDate, metric2);
+        double averagePrice = carAnalyticsManag-er.getCarAnalyticsData(startDate, endDate, metric3);
 
         assertEquals(100, carCount, 0.001);
         assertEquals(5000000, salesVolume, 0.001);
         assertEquals(25000, averagePrice, 0.001);
     }
 }
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class ReportExporterTest {
 
@@ -246,8 +228,6 @@ public class ReportExporterTest {
         assertTrue(exportResult);
     }
 }
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class CarDiscountManagerTest {
 
@@ -266,15 +246,13 @@ public class CarDiscountManagerTest {
         double discountAmount = 5000.0;
 
       
-        Car car = new Car(carBrand, carModel, carYear, carMileage, carEngineSize, carFuelConsumption, carDealer);
+        Car car = new Car(carBrand, carModel, carYear, carMileage, carEn-gineSize, carFuelConsumption, carDealer);
 
-        boolean addDiscountResult = carDiscountManager.addDiscount(car, discountAmount);
+        boolean addDiscountResult = carDiscountManager.addDiscount(car, dis-countAmount);
 
         assertTrue(addDiscountResult);
     }
 }
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class CarDiscountManagerTest {
 
@@ -302,7 +280,7 @@ public class CarDiscountManagerTest {
         carDiscountManager.setAvtosalonContact(avtosalonContact);
 
         
-        boolean editAvtosalonResult = carDiscountManager.editAvtosalon(newAvtosalonName, newAvtosalonLocation, newAvtosalonCapacity, newAvtosalonManager, newAvtosalonContact);
+        boolean editAvtosalonResult = carDiscountManag-er.editAvtosalon(newAvtosalonName, newAvtosalonLocation, newAvtosalonCapacity, newAvtosalonManager, newAvtosalonContact);
 
         assertTrue(editAvtosalonResult);
     }
